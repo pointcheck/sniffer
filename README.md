@@ -1,4 +1,4 @@
-# A set of scripts to configure Network Traffic Analyzer
+# A set of scripts to configure Network Traffic Analyzer based on FreeBSD
 
 Simple yet powerful network debugging tool can be created using mini-PC with
 two Ethernet network interfaces and FreeBSD installed and configured for bridging
