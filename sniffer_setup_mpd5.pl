@@ -202,17 +202,11 @@ open(IFDOWN, ">".$mpd5_etc."/ifdown.sh");
 
 print IFDOWN<<END;
 #!/bin/sh
-echo \$* > /tmp/.mpd5.\$1
-wanip=`/sbin/route -n get default | sed -rn 's/gateway: (.*)/\\1/p'` 
-echo \$wanip > /tmp/.defaultgateway
-localip=\$3
-remoteip=\$4
-serverip=\$8
-echo localip=\$3 remoteip=\$4 serverip=\$8 >> /tmp/.mpd5.\$1
-/sbin/route delete \$serverip
-/sbin/route add \$serverip \$wanip
+wanip=`cat /tmp/.defaultgateway`
+/sbin/route delete \$4
 /sbin/route delete default
-/sbin/route add default \$remoteip
+/sbin/route add default \$wanip
+rm /tmp/.defaultgateway
 END
 close(IFDOWN);
 
