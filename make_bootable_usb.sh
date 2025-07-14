@@ -135,6 +135,14 @@ else
 	exit 1
 fi
 
+echo "Modifying /etc/fstab"
+if sed -e 's/\/ada/\/da/' -i .old /mnt/etc/fstab ; then
+else
+	echo "Abort!"
+	exit 1
+fi
+rm /mnt/etc/fstab.old
+
 echo "Calling cleanup script $CLEANUP"
 sh $CLEANUP 2> /dev/null
 
