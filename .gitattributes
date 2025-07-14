@@ -1,0 +1,4 @@
+git lfs track "*.iso"
+git lfs track "*.gz"
+git lfs track "*.xz"
+
