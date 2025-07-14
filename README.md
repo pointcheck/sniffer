@@ -46,7 +46,7 @@ Connect two Ethernet ports in-between of the DUT and network. Setup `bridge0' ne
 sudo ./sniffer_setup_bridge.pl
 ```
 
-6. Optionally setup `mpd5' for PPTP, LP2TP and PPPoE tunneling to let remote access to sniffer from the Internet
+6. Optionally setup **mpd5** for PPTP, LP2TP and PPPoE tunneling to let remote access to sniffer from the Internet
 
 ```
 sudo ./sniffer_setup_mpd5.pl
@@ -60,7 +60,7 @@ sudo reboot
 
 8. Log in again and use the sniffer
 
-There are `tcpdump', `tshark', `trafshow' and `snort' tools at your disposal.
+There are **tcpdump**, **tshark**, **trafshow** and **snort** tools at your disposal.
 
 9. Some brief docs are also available
 
