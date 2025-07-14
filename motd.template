@@ -1,0 +1,27 @@
+
+
+Welcome to FreeBSD!
+
+You are connected to Network Sniffer.
+
+To make initial setup, run the following scripts:
+
+	% sudo ./sniffer_setup_wifi.pl 
+	% sudo ./sniffer_setup_mpd5.pl 
+	% sudo ./sniffer_setup_bridge.pl
+
+Find command examples in cheatsheet.md, use it as system MOTD:
+
+	% sudo cp cheatsheet.md /etc
+
+There are some more complex examples on how to use `tcpdump', `tshark' and `snort':
+
+	% more rule_http_password.md
+	% more rule_sip.md
+	% more rule_ssh.md
+	% more snort.md
+
+---
+This setup of FreeBSD was prepared for you by Ruslan Zalata <rz@fabmicro.ru>
+
+
