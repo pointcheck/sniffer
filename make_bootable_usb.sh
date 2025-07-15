@@ -101,7 +101,7 @@ else
 fi
 
 echo "Copying FreeBSD bootloader to /mnt/EFI"
-if cp -r /boot/efi /mnt/ ; then
+if cp -r /boot/efi/efi /mnt/ ; then
 else
 	echo "Abort!"
 	exit 1
